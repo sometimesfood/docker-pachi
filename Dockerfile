@@ -12,3 +12,6 @@ RUN wget -q http://repo.or.cz/w/pachi.git/snapshot/pachi-11.00-retsugen.tar.gz &
     rm -rf pachi-pachi-11.00-retsugen-9f8c498 && \
     rm -rf /var/cache/apk/* && \
     apk -q del build-base
+EXPOSE 6809
+USER nobody
+CMD ["pachi", "-g", "6809"]
