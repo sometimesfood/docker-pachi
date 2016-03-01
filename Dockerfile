@@ -3,7 +3,7 @@ ADD checksums.sha256 checksums.sha256
 RUN wget -q http://repo.or.cz/w/pachi.git/snapshot/pachi-11.00-retsugen.tar.gz && \
     sha256sum -c checksums.sha256 && \
     apk -q add --update build-base && \
-    tar -xvzf pachi-11.00-retsugen.tar.gz && \
+    tar -xzf pachi-11.00-retsugen.tar.gz && \
     cd pachi-pachi-11.00-retsugen-9f8c498 && \
     CFLAGS='-O2 -fomit-frame-pointer' make && \
     make install && \
