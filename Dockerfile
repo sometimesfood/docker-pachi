@@ -5,7 +5,7 @@ RUN wget -q http://repo.or.cz/w/pachi.git/snapshot/pachi-11.00-retsugen.tar.gz &
     apk -q add --update build-base && \
     tar -xzf pachi-11.00-retsugen.tar.gz && \
     cd pachi-pachi-11.00-retsugen-9f8c498 && \
-    CFLAGS='-O2 -fomit-frame-pointer' make && \
+    SYS_CFLAGS='' make && \
     make install && \
     cd .. && \
     rm pachi-11.00-retsugen.tar.gz && \
