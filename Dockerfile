@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM alpine:3.8
 ADD checksums.sha256 checksums.sha256
 RUN wget http://repo.or.cz/w/pachi.git/snapshot/pachi-11.00-retsugen.tar.gz && \
     sha256sum -c checksums.sha256 && \
