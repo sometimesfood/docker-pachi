@@ -1,4 +1,8 @@
 # docker-pachi NEWS
+## 0.1.3 (2019-01-08)
+- Bump alpine version to 3.8
+- Increase build output verbosity
+
 ## 0.1.2 (2016-03-01)
 - Set SYS_CFLAGS to empty string to disable "-march=native" (#2)
 
