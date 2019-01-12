@@ -1,4 +1,8 @@
 # docker-pachi NEWS
+## 0.1.4 (2019-01-12)
+- Use multistage Docker build
+- Strip pachi binary
+
 ## 0.1.3 (2019-01-08)
 - Bump alpine version to 3.8
 - Increase build output verbosity
