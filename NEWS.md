@@ -1,4 +1,7 @@
 # docker-pachi NEWS
+## 0.1.5 (2019-01-29)
+- Migrate Docker image to new Docker Hub setup
+
 ## 0.1.4 (2019-01-12)
 - Use multistage Docker build
 - Strip pachi binary
